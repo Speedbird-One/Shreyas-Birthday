@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <title>Happy Birthday!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <audio id="song" loop>
+      <source src="assets/audio/Birthday_Song.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="pageDiv" id="landing">
+      <h1>Click on Screen!</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <div class="pageDiv" id="greeting">
+      <h1>Happy Birthday!</h1>
+      <h3>Scroll Down</h3>
+    </div>
+
+    <div class="switchDiv">
+      <div class="switchBar">
+        <span class="switchSpan">
+          <label for="isVulgar">Clean</label>
+          <label class="switch">
+            <input id="isVulgar" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <label for="isVulgar">Vulgar</label>
+        </span>
+
+        <span class="switchSpan">
+          <label for="isDark">Dark</label>
+          <label class="switch">
+            <input id="isDark" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <label for="isDark">Light</label>
+        </span>
+      </div>
+
+      <div class="dropList">
+        <center>
+          <div class="setBtnDiv">
+            <img id="arrow" src="assets/images/triangle-dark.png" alt="arrow" />
+            <button class="dropbtn">Settings</button>
+          </div>
+
+          <div class="dropListContent">
+            <span class="switchSpan" id="dropSpan1">
+              <label for="isVulgar2">Clean</label>
+              <label class="switch">
+                <input id="isVulgar2" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <label for="isVulgar2">Vulgar</label>
+            </span>
+
+            <span class="switchSpan">
+              <label for="isDark2">Dark</label>
+              <label class="switch">
+                <input id="isDark2" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <label for="isDark2">Light</label>
+            </span>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <div id="cards">
+      <div class="card card_odd" id="card0">
+        <img
+          id="pic0"
+          class="pics"
+          src="assets/images/safe/Adult.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Shreyas is an Adult</h2>
+          <p class="par p_odd">
+            Today is the big day! Shreyas has turned 18, which means he is
+            officially an “adult”. He has now matured and has all sorts of
+            responsibilities. He now has the Right to Vote, and most importantly
+            the ability to do everything listed below.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card1">
+        <img
+          id="pic1"
+          class="pics"
+          src="assets/images/clean/Cursing.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Cursing and Abusing</h2>
+          <p class="par p_even">
+            Till you're 17 years and 364 days old, you are INNOCENT. But the
+            moment you turn 18 you'll start droping F-Bombs and Hard-R's left
+            and right. There will be no limit to your cursing and you can
+            unleash the beast.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_odd" id="card2">
+        <img
+          id="pic2"
+          class="pics"
+          src="assets/images/clean/Smoking.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Smoking Cigarettes</h2>
+          <p class="par p_odd">
+            With his new found freedom, Shreyas will start smoking a pack of
+            cigarettes every day. And he won’t smoke the local cigarettes
+            either. He will only smoke Marlboro Gold imported cigarettes worth
+            Rs. 1,200 per pack.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card3">
+        <img
+          id="pic3"
+          class="pics"
+          src="assets/images//clean/Drinking.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Drinking Alcohol</h2>
+          <p class="par p_even">
+            Along with smoking, Shreyas will start drinking also. And he won't
+            drink local booze. Just like his cigarettes, he likes his alcohol to
+            be the finest in the world. Hence, he only drinks Glenn McKenna 35
+            Year Aged Scotch.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_odd" id="card4">
+        <img
+          id="pic4"
+          class="pics"
+          src="assets/images/clean/Riding.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Driving his Bike (Scooter)</h2>
+          <p class="par p_odd">
+            Inspired by his father and former MotoGP World Champion Seetharam
+            Patro, Shreyas will drive his bike (scooter) next level fast. He
+            will crush Bengaluru traffic with his god-given ability to drive at
+            near light speed. (I hope he doesn't drink and drive though.)
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card5">
+        <img
+          id="pic5"
+          class="pics"
+          src="assets/images//clean/Women.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Have a Girlfriend</h2>
+          <p class="par p_even">
+            Shreyas will enjoy college life with his special someone. They'll
+            hang out, spend time together, go on dates and maybe even go on a
+            long drive together. You might sneak into her room during a college
+            trip. And to top it all off, you will plan a grand proposal for your
+            girlfriend.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_odd" id="card6">
+        <img
+          id="pic6"
+          class="pics"
+          src="assets/images/clean/Dahmer.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Watch Out for Dahmer</h2>
+          <p class="par p_odd">
+            I heard that infamous serial killer Jeffery Dahmer has recently been
+            reincarnated as Dahmer 2.0. They say he is specifically looking for
+            an 18-year-old Indian male as his 18th victim. So, if a suspicious
+            looking uncle tries to lure you to his car with chocolate, don't
+            fall for it.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card7">
+        <img
+          id="pic7"
+          class="pics"
+          src="assets/images/SmokeDrink.png"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Don't Smoke and Drink</h2>
+          <p class="par p_even">
+            Smoking is injurious to health. It causes cancer. Smoking kills.
+            Excessive drinking is also injurious to health. It results in Liver
+            failure. None of the actors portrayed in the website nor the
+            developers promote or support smoking and drinking.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_odd" id="card8">
+        <img
+          id="pic8"
+          class="pics"
+          src="assets/images/BehindTheScenes.png"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Behind The Scenes</h2>
+          <p class="par p_odd">
+            If you want to watch the process of making this website and other
+            behind the scenes content then check out the video on my YouTube
+            channel:
+            <a href="https://youtu.be/ZEvNtfqeKkc"
+              >Making of "Shreyas' Birthday"</a
+            >
+            <br />
+            Website's source code is hosted on
+            <a href="https://github.com/Speedbird-One/Shreyas-Birthday"
+              >my GitHub Repo</a
+            >.
+          </p>
+        </span>
+      </div>
+
+      <div style="height: 22.5vh"></div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+  </body>
+</html>

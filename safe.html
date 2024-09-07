@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <title>Happy Birthday!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="safe.css" />
+  </head>
+
+  <body>
+    <audio id="song" loop>
+      <source src="assets/audio/Birthday_Song.mp3" type="audio/mp3" />
+    </audio>
+
+    <div class="pageDiv" id="landing">
+      <h1>Click on Screen!</h1>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <div class="pageDiv" id="greeting">
+      <h1>Happy Birthday!</h1>
+      <h3>Scroll Down</h3>
+    </div>
+
+    <div class="switchDiv">
+      <div class="switchBar">
+        <span class="switchSpan">
+          <label for="isDark">Dark</label>
+          <label class="switch">
+            <input id="isDark" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <label for="isDark">Light</label>
+        </span>
+      </div>
+    </div>
+
+    <div id="cards">
+      <div class="card card_odd" id="card1">
+        <img
+          id="pic1"
+          class="pics"
+          src="assets/images/safe/Adult.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Shreyas is an Adult</h2>
+          <p class="par p_odd">
+            Today is the big day! Shreyas has turned 18, which means he is
+            officially an "adult". He has now matured and has all sorts of
+            responsibilities. He now has the Right to Vote, and most importantly
+            the ability to legally consume alcohol.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card2">
+        <img
+          id="pic2"
+          class="pics"
+          src="assets/images/safe/UVCE.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Going to College</h2>
+          <p class="par p_even">
+            Shreyas will go to college, make lots of friends and enjoy college
+            life to the fullest. And he will do so, while excelling in academics
+            and become an excellent engineer.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_odd" id="card3">
+        <img
+          id="pic3"
+          class="pics"
+          src="assets/images/safe/Friends.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Hanging Out with Friends</h2>
+          <p class="par p_odd">
+            Shreyas will have a massive friends circle in college and he will go
+            with them to watch movies, eat outside, go to a cricket match and do
+            all sorts of other fun activities. (Don't completely forget about me
+            though.)
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card4">
+        <img
+          id="pic4"
+          class="pics"
+          src="assets/images/safe/Party.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Party All Night</h2>
+          <p class="par p_even">
+            Shreyas will celebrate his youth by partying with his friends on all
+            sorts of different occasions, including his birthday. And every
+            single time he will steal the show by being the most energetic and
+            charismatic person at the party.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_odd" id="card5">
+        <img
+          id="pic5"
+          class="pics"
+          src="assets/images/safe/Scooter.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Riding his Scooter</h2>
+          <p class="par p_odd">
+            Shreyas will ride his scooter and perhaps go on long drive with his
+            friends. (I gues he can ride bike also, but it is very unlikely. He
+            will give up before he learns to use the clutch. So most probably he
+            will ride scooter only.)
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card6">
+        <img
+          id="pic6"
+          class="pics"
+          src="assets/images/safe/Grad.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Graduating from College</h2>
+          <p class="par p_even">
+            Shreyas will ace his academics and finish his degree with a 9.8
+            unweighted CGPA. He will hence proceed to be the top student of his
+            batch and graduate with the highest honours in his college.
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_odd" id="card7">
+        <img
+          id="pic7"
+          class="pics"
+          src="assets/images/safe/Money.gif"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Huge Package</h2>
+          <p class="par p_odd">
+            Shreyas will also ace his placements by impressing the interviewers
+            and get the role of Senior AIML Engineer at Google Inc. with an
+            enourmous package and become rich. (If you become rich, please
+            donate some money to me.)
+          </p>
+        </span>
+      </div>
+
+      <div class="card card_even" id="card8">
+        <img
+          id="pic8"
+          class="pics"
+          src="assets/images/BehindTheScenes.png"
+          alt="placeholder image"
+        />
+
+        <span class="sub_container">
+          <h2>Behind The Scenes</h2>
+          <p class="par p_even">
+            If you want to watch the process of making this website and other
+            behind the scenes content then check out the video on my YouTube
+            channel:
+            <a href="https://youtu.be/ZEvNtfqeKkc"
+              >Making of "Shreyas' Birthday"</a
+            >
+            <br />
+            Website's source code is hosted on
+            <a href="https://github.com/Speedbird-One/Shreyas-Birthday"
+              >my GitHub Repo</a
+            >.
+          </p>
+        </span>
+      </div>
+
+      <div style="height: 22.5vh"></div>
+    </div>
+
+    <script src="safe.js" type="text/javascript"></script>
+  </body>
+</html>
